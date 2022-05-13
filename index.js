@@ -10,6 +10,7 @@ app.post("/events", (req, res) => {
 
   axios.post("http://localhost:5000/events", event); // Post an event to natter service
   axios.post("http://localhost:5001/events", event); // Post an event to cross-natter service
+  axios.post("http://localhost:5002/events", event); // Post an event to query engine service
 
   res.send({ status: "OK" });
 });
