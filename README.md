@@ -5,6 +5,6 @@
 Run:
 
 ```
-npm install
-npm start
+docker build . -t arriva
+docker run --network host -p 5005:5005 -d arriva
 ```
